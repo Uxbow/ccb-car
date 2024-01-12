@@ -35,16 +35,28 @@
             <a href="#one" class="button special scrolly banner-btn">Réservez votre voiture</a>
             <button class="banner-btn" onclick="openModal()">Affichez les conditions</button>
         </div>
-        <div class="banner-pics">
-          <div class="cars">
-            <img src="./rio.png" alt="Locations de Kia Rio chez Cocobeach Car Marie-Galante et Cocobeach Car Guadeloupe">
-            <img src="picanto.png" alt="Location de Kia picanto chez Cocobeach Car et Cocobeach Car Guadeloupe">
+        <div class="carousel-element">
+          <button class="carousel-control control-left" disabled >←</button>
+          <div class="carousel-visible">
+            <ul class="carousel-list">
+              <li class="carousel-item">
+                <img src="./rio.png" alt="Locations de Kia Rio chez Cocobeach Car Marie-Galante et Cocobeach Car Guadeloupe">
+              </li>
+              <li class="carousel-item">
+                <img src="picanto.png" alt="Location de Kia picanto chez Cocobeach Car et Cocobeach Car Guadeloupe">
+              </li>
+              <li class="carousel-item">
+                <img src="./chopper-3.png" alt="Location de scooters Chopper chez Cocobeach Car Marie-Galante et Cocobeach Car Guadeloupe">
+              </li>
+              <li class="carousel-item">
+                <img src="./liberty.png" alt="Location de scooters Liberty chez Cocobeach Car Marie-Galante et Cocobeach Car Guadeloupe">
+              </li>
+              <li class="carousel-item">
+                <img src="./chopper-2.png" alt="Location de scooters chez Cocobeach Car Marie-Galante et Cocobeach Car Guadeloupe">
+              </li>
+            </ul>
           </div>
-          <div class="scooters">
-            <img src="./chopper-3.png" alt="Location de scooters Chopper chez Cocobeach Car et Cocobeach Car Guadeloupe">
-            <img src="./liberty.png" alt="Location de scooters Liberty chez Cocobeach Car et Cocobeach Car Guadeloupe">
-            <img src="./chopper-2.png" alt="Location de scooters chez Cocobeach Car et Cocobeach Car Guadeloupe">
-          </div>
+          <button class="carousel-control control-right">→</button>
         </div>
       </div>
     </section>
@@ -54,5 +66,6 @@
         document.querySelector('.scooters').classList.toggle('reveal');
       }, 3000);
     </script>
+    <script src="./carousel.js"></script>
   </body>
 </html>

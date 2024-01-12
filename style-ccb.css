@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'MuseoModerno', cursive;
 }
 
+ul,ol{
+    list-style: none;
+}
+
 #banner {
     display: -ms-flexbox;
     -ms-flex-pack: center;
@@ -161,6 +165,57 @@ button.banner-btn{
     opacity: 1;
 }
 
+.carousel-element{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.carousel-control{
+    background: #00000050;
+    color: white;
+    border: 1px solid white;
+    width: 45px;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.carousel-control:not(:disabled):hover{
+    color: var(--maincolor);
+    background: white;
+}
+
+
+.carousel-visible{
+    width: 360px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-list{
+    display: flex;
+    height: 100%;
+    transition: transform 0.3s linear;
+    width: fit-content;
+}
+
+.carousel-item{
+    width: 360px;
+    text-align: center;
+    height: 100%;
+}
+.carousel-item img{
+    height: 100%;
+}
+
+.carousel-control:disabled{
+    opacity: .3;
+    cursor: auto;
+}
 
 
 @media screen and (max-width: 1400px){
@@ -229,5 +284,20 @@ button.banner-btn{
     }
     .h2-container span{
         font-size: 12px;
+    }
+    .carousel-element{
+        height: 150px;
+        margin-top: 5vh;
+        column-gap: 0;
+    }
+    .carousel-visible,
+    .carousel-item{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .carousel-element{
+        margin-top: 2.5vh;
     }
 }
