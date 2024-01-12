@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocoboeach</title>
+    <link rel="stylesheet" href="./style-ccb.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&family=MuseoModerno:wght@100;200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="banner" data-video="images/banner">
+        <div class="h2-container">
+            <h2> 
+                <img src="./coconut-tree.svg" alt="" class="h2-decoration">
+                Coco Beach Car
+            </h2>
+         <span>by <a href="http://www.cocobeachmariegalante.com/">Coco Beach Marie-Galante</a></span>
+        </div>
+      <div class="inner">
+        <div class="h1-container">
+            <img src="./coconut-tree.svg" alt="" class="h1-decoration">
+            <h1>Cocobeach car</h1>
+        </div>
+        <p>
+          Réservez votre voiture ou votre scooter avec<br />les meilleurs tarifs de Marie-Galante et
+          de Guadeloupe
+        </p>
+        <div class="banner-btn-container">
+            <a href="#one" class="button special scrolly banner-btn">Réservez votre voiture</a>
+            <button class="banner-btn" onclick="openModal()">Affichez les conditions</button>
+        </div>
+        <div class="banner-pics">
+          <div class="cars">
+            <img src="./rio.png" alt="Locations de Kia Rio chez Cocobeach Car Marie-Galante et Cocobeach Car Guadeloupe">
+            <img src="picanto.png" alt="Location de Kia picanto chez Cocobeach Car et Cocobeach Car Guadeloupe">
+          </div>
+          <div class="scooters">
+            <img src="./chopper-3.png" alt="Location de Kia picanto chez Cocobeach Car et Cocobeach Car Guadeloupe">
+            <img src="./liberty.png" alt="Location de Kia picanto chez Cocobeach Car et Cocobeach Car Guadeloupe">
+            <img src="./chopper-2.png" alt="Location de Kia picanto chez Cocobeach Car et Cocobeach Car Guadeloupe">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      setInterval(() => {
+        document.querySelector('.cars').classList.toggle('disappear');
+        document.querySelector('.scooters').classList.toggle('reveal');
+      }, 3000);
+    </script>
+  </body>
+</html>

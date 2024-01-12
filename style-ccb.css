@@ -1,0 +1,233 @@
+*, ::after, ::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+    --maincolor : #E77654;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'MuseoModerno', cursive;
+}
+
+#banner {
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    padding-top: 20vh;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    background-image: linear-gradient(#00000090 , #00000050),url("./banner.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 0;
+    min-height: 100vh;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+.h1-container{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+h1{
+    width: fit-content;
+    font-size: 100px;
+}
+
+.h1-decoration,
+.h2-decoration{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translate(-120%, -50%);
+    height: 80px;
+}
+.h1-decoration{
+    height: 80px;
+}
+.h2-decoration{
+    height: 20px;
+}
+
+#banner p{
+    font-size: 30px;
+    font-weight: 500;
+}
+h2{
+    position: relative;
+}
+
+.h2-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    left: 30px;
+    text-align: left;
+}
+.h2-container{
+    font-family: 'MuseoModerno', cursive;
+}
+.h2-container a,
+#banner .button.special{
+    color: white;
+}
+
+#banner .button.special{
+    color: white;
+    text-decoration: none;
+    
+}
+.h2-container a{
+    text-underline-offset: 2px;
+    
+}
+.h2-container a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.banner-btn{
+    border: 2px solid #FFFFFF;
+    display: inline-block;
+    line-height: 50px;
+    width: 300px;
+    margin: 50px 8px;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+button.banner-btn{
+    background: white;
+    color: var(--maincolor);
+    font-family: 'Mulish', sans-serif;
+}
+
+.h2-container span{
+    font-size: 14px;
+}
+
+.banner-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner .button.special{
+    background: var(--maincolor);
+}
+
+.banner-pics{
+    height: 200px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.cars,.scooters{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    transition: opacity 0.8s linear;
+}
+
+.scooters{
+    opacity: 0;
+}
+
+.cars.disappear{
+    opacity: 0;
+}
+.scooters.reveal{
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1400px){
+    .banner-pics{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 1200px){
+    h1{
+        font-size: 80px;
+    }
+    .h1-decoration {
+        height: 70px;
+    }
+    .banner-btn{
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .banner-pics{
+        height: 150px;
+    }
+    #banner p{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 60px;
+    }
+    .h1-decoration {
+        height: 60px;
+    }
+    #banner p{
+        font-size: 20px;
+    }
+    .banner-btn{
+        font-size: 14px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 575px){
+    .banner-pics{
+        display: none;
+    }
+    .banner-btn-container{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    .banner-btn{
+        margin: 10px;
+        width: 330px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .h1-decoration {
+        height: 40px;
+    }
+    #banner p{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .h2-container span{
+        font-size: 12px;
+    }
+}
