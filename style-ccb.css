@@ -300,4 +300,7 @@ button.banner-btn{
     .carousel-element{
         margin-top: 2.5vh;
     }
+    .banner-btn-container{
+        margin-top: 40px;
+    }
 }
